@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07E5A39E2BFA0AA300748166 /* MoovupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E5A39D2BFA0AA300748166 /* MoovupApp.swift */; };
+		07E5A3A02BFA0AA300748166 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E5A39F2BFA0AA300748166 /* ContentView.swift */; };
+		07E5A3A22BFA0AA500748166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E5A3A12BFA0AA500748166 /* Assets.xcassets */; };
+		07E5A3A52BFA0AA500748166 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E5A3A42BFA0AA500748166 /* Preview Assets.xcassets */; };
+		07E5A3AF2BFA0AA500748166 /* MoovupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E5A3AE2BFA0AA500748166 /* MoovupTests.swift */; };
+		07E5A3B92BFA0AA500748166 /* MoovupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E5A3B82BFA0AA500748166 /* MoovupUITests.swift */; };
+		07E5A3BB2BFA0AA500748166 /* MoovupUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E5A3BA2BFA0AA500748166 /* MoovupUITestsLaunchTests.swift */; };
+		07E5A3C92BFA10A900748166 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 07E5A3C82BFA10A900748166 /* Alamofire */; };
+		07E5A3CD2BFA275300748166 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E5A3CC2BFA275300748166 /* Person.swift */; };
+		07E5A3CF2BFA2BFA00748166 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E5A3CE2BFA2BFA00748166 /* PeopleViewModel.swift */; };
+		07E5A3D22BFA5B9A00748166 /* PeopleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E5A3D12BFA5B9A00748166 /* PeopleListView.swift */; };
+		07E5A3D42BFA5BFE00748166 /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E5A3D32BFA5BFE00748166 /* PersonDetailView.swift */; };
+		07E5A3D62BFA892500748166 /* PeopleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E5A3D52BFA892500748166 /* PeopleMapView.swift */; };
+		07E5A3D92BFB206600748166 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 07E5A3D82BFB206600748166 /* SDWebImageSwiftUI */; };
+		07E5A3DB2BFB2E2F00748166 /* PersonItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E5A3DA2BFB2E2F00748166 /* PersonItemView.swift */; };
+		07E5A3DE2BFB46E300748166 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E5A3DD2BFB46E300748166 /* APIManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07E5A3AB2BFA0AA500748166 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07E5A3922BFA0AA300748166 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07E5A3992BFA0AA300748166;
+			remoteInfo = com.eric.test.moovup;
+		};
+		07E5A3B52BFA0AA500748166 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07E5A3922BFA0AA300748166 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07E5A3992BFA0AA300748166;
+			remoteInfo = com.eric.test.moovup;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07E5A39A2BFA0AA300748166 /* com.eric.test.moovup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = com.eric.test.moovup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07E5A39D2BFA0AA300748166 /* MoovupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoovupApp.swift; sourceTree = "<group>"; };
+		07E5A39F2BFA0AA300748166 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		07E5A3A12BFA0AA500748166 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07E5A3A42BFA0AA500748166 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		07E5A3AA2BFA0AA500748166 /* com.eric.test.moovupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.eric.test.moovupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07E5A3AE2BFA0AA500748166 /* MoovupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoovupTests.swift; sourceTree = "<group>"; };
+		07E5A3B42BFA0AA500748166 /* com.eric.test.moovupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.eric.test.moovupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07E5A3B82BFA0AA500748166 /* MoovupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoovupUITests.swift; sourceTree = "<group>"; };
+		07E5A3BA2BFA0AA500748166 /* MoovupUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoovupUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		07E5A3CC2BFA275300748166 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		07E5A3CE2BFA2BFA00748166 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
+		07E5A3D12BFA5B9A00748166 /* PeopleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListView.swift; sourceTree = "<group>"; };
+		07E5A3D32BFA5BFE00748166 /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
+		07E5A3D52BFA892500748166 /* PeopleMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleMapView.swift; sourceTree = "<group>"; };
+		07E5A3DA2BFB2E2F00748166 /* PersonItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonItemView.swift; sourceTree = "<group>"; };
+		07E5A3DD2BFB46E300748166 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07E5A3972BFA0AA300748166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E5A3D92BFB206600748166 /* SDWebImageSwiftUI in Frameworks */,
+				07E5A3C92BFA10A900748166 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07E5A3A72BFA0AA500748166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07E5A3B12BFA0AA500748166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07E5A3912BFA0AA300748166 = {
+			isa = PBXGroup;
+			children = (
+				07E5A39C2BFA0AA300748166 /* com.eric.test.moovup */,
+				07E5A3AD2BFA0AA500748166 /* com.eric.test.moovupTests */,
+				07E5A3B72BFA0AA500748166 /* com.eric.test.moovupUITests */,
+				07E5A39B2BFA0AA300748166 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07E5A39B2BFA0AA300748166 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07E5A39A2BFA0AA300748166 /* com.eric.test.moovup.app */,
+				07E5A3AA2BFA0AA500748166 /* com.eric.test.moovupTests.xctest */,
+				07E5A3B42BFA0AA500748166 /* com.eric.test.moovupUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07E5A39C2BFA0AA300748166 /* com.eric.test.moovup */ = {
+			isa = PBXGroup;
+			children = (
+				07E5A3DC2BFB46D000748166 /* Manager */,
+				07E5A3D02BFA5B7B00748166 /* View */,
+				07E5A3CB2BFA272100748166 /* Model */,
+				07E5A3CA2BFA158B00748166 /* ViewModel */,
+				07E5A39D2BFA0AA300748166 /* MoovupApp.swift */,
+				07E5A39F2BFA0AA300748166 /* ContentView.swift */,
+				07E5A3A12BFA0AA500748166 /* Assets.xcassets */,
+				07E5A3A32BFA0AA500748166 /* Preview Content */,
+			);
+			path = com.eric.test.moovup;
+			sourceTree = "<group>";
+		};
+		07E5A3A32BFA0AA500748166 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				07E5A3A42BFA0AA500748166 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		07E5A3AD2BFA0AA500748166 /* com.eric.test.moovupTests */ = {
+			isa = PBXGroup;
+			children = (
+				07E5A3AE2BFA0AA500748166 /* MoovupTests.swift */,
+			);
+			path = com.eric.test.moovupTests;
+			sourceTree = "<group>";
+		};
+		07E5A3B72BFA0AA500748166 /* com.eric.test.moovupUITests */ = {
+			isa = PBXGroup;
+			children = (
+				07E5A3B82BFA0AA500748166 /* MoovupUITests.swift */,
+				07E5A3BA2BFA0AA500748166 /* MoovupUITestsLaunchTests.swift */,
+			);
+			path = com.eric.test.moovupUITests;
+			sourceTree = "<group>";
+		};
+		07E5A3CA2BFA158B00748166 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				07E5A3CE2BFA2BFA00748166 /* PeopleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		07E5A3CB2BFA272100748166 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07E5A3CC2BFA275300748166 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		07E5A3D02BFA5B7B00748166 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07E5A3D12BFA5B9A00748166 /* PeopleListView.swift */,
+				07E5A3D32BFA5BFE00748166 /* PersonDetailView.swift */,
+				07E5A3D52BFA892500748166 /* PeopleMapView.swift */,
+				07E5A3DA2BFB2E2F00748166 /* PersonItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		07E5A3DC2BFB46D000748166 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				07E5A3DD2BFB46E300748166 /* APIManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07E5A3992BFA0AA300748166 /* com.eric.test.moovup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07E5A3BE2BFA0AA500748166 /* Build configuration list for PBXNativeTarget "com.eric.test.moovup" */;
+			buildPhases = (
+				07E5A3962BFA0AA300748166 /* Sources */,
+				07E5A3972BFA0AA300748166 /* Frameworks */,
+				07E5A3982BFA0AA300748166 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com.eric.test.moovup;
+			packageProductDependencies = (
+				07E5A3C82BFA10A900748166 /* Alamofire */,
+				07E5A3D82BFB206600748166 /* SDWebImageSwiftUI */,
+			);
+			productName = com.eric.test.moovup;
+			productReference = 07E5A39A2BFA0AA300748166 /* com.eric.test.moovup.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07E5A3A92BFA0AA500748166 /* com.eric.test.moovupTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07E5A3C12BFA0AA500748166 /* Build configuration list for PBXNativeTarget "com.eric.test.moovupTests" */;
+			buildPhases = (
+				07E5A3A62BFA0AA500748166 /* Sources */,
+				07E5A3A72BFA0AA500748166 /* Frameworks */,
+				07E5A3A82BFA0AA500748166 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07E5A3AC2BFA0AA500748166 /* PBXTargetDependency */,
+			);
+			name = com.eric.test.moovupTests;
+			productName = com.eric.test.moovupTests;
+			productReference = 07E5A3AA2BFA0AA500748166 /* com.eric.test.moovupTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		07E5A3B32BFA0AA500748166 /* com.eric.test.moovupUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07E5A3C42BFA0AA500748166 /* Build configuration list for PBXNativeTarget "com.eric.test.moovupUITests" */;
+			buildPhases = (
+				07E5A3B02BFA0AA500748166 /* Sources */,
+				07E5A3B12BFA0AA500748166 /* Frameworks */,
+				07E5A3B22BFA0AA500748166 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07E5A3B62BFA0AA500748166 /* PBXTargetDependency */,
+			);
+			name = com.eric.test.moovupUITests;
+			productName = com.eric.test.moovupUITests;
+			productReference = 07E5A3B42BFA0AA500748166 /* com.eric.test.moovupUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07E5A3922BFA0AA300748166 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					07E5A3992BFA0AA300748166 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					07E5A3A92BFA0AA500748166 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 07E5A3992BFA0AA300748166;
+					};
+					07E5A3B32BFA0AA500748166 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 07E5A3992BFA0AA300748166;
+					};
+				};
+			};
+			buildConfigurationList = 07E5A3952BFA0AA300748166 /* Build configuration list for PBXProject "com.eric.test.moovup" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07E5A3912BFA0AA300748166;
+			packageReferences = (
+				07E5A3C72BFA10A900748166 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				07E5A3D72BFB206600748166 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = 07E5A39B2BFA0AA300748166 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07E5A3992BFA0AA300748166 /* com.eric.test.moovup */,
+				07E5A3A92BFA0AA500748166 /* com.eric.test.moovupTests */,
+				07E5A3B32BFA0AA500748166 /* com.eric.test.moovupUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07E5A3982BFA0AA300748166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E5A3A52BFA0AA500748166 /* Preview Assets.xcassets in Resources */,
+				07E5A3A22BFA0AA500748166 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07E5A3A82BFA0AA500748166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07E5A3B22BFA0AA500748166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07E5A3962BFA0AA300748166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E5A3DB2BFB2E2F00748166 /* PersonItemView.swift in Sources */,
+				07E5A3D42BFA5BFE00748166 /* PersonDetailView.swift in Sources */,
+				07E5A3CD2BFA275300748166 /* Person.swift in Sources */,
+				07E5A3DE2BFB46E300748166 /* APIManager.swift in Sources */,
+				07E5A3D62BFA892500748166 /* PeopleMapView.swift in Sources */,
+				07E5A3CF2BFA2BFA00748166 /* PeopleViewModel.swift in Sources */,
+				07E5A3D22BFA5B9A00748166 /* PeopleListView.swift in Sources */,
+				07E5A3A02BFA0AA300748166 /* ContentView.swift in Sources */,
+				07E5A39E2BFA0AA300748166 /* MoovupApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07E5A3A62BFA0AA500748166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E5A3AF2BFA0AA500748166 /* MoovupTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07E5A3B02BFA0AA500748166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E5A3B92BFA0AA500748166 /* MoovupUITests.swift in Sources */,
+				07E5A3BB2BFA0AA500748166 /* MoovupUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07E5A3AC2BFA0AA500748166 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07E5A3992BFA0AA300748166 /* com.eric.test.moovup */;
+			targetProxy = 07E5A3AB2BFA0AA500748166 /* PBXContainerItemProxy */;
+		};
+		07E5A3B62BFA0AA500748166 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07E5A3992BFA0AA300748166 /* com.eric.test.moovup */;
+			targetProxy = 07E5A3B52BFA0AA500748166 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07E5A3BC2BFA0AA500748166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07E5A3BD2BFA0AA500748166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07E5A3BF2BFA0AA500748166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"com.eric.test.moovup/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eric.com-eric-test-moovup";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07E5A3C02BFA0AA500748166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"com.eric.test.moovup/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eric.com-eric-test-moovup";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		07E5A3C22BFA0AA500748166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eric.com-eric-test-moovupTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/com.eric.test.moovup.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/com.eric.test.moovup";
+			};
+			name = Debug;
+		};
+		07E5A3C32BFA0AA500748166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eric.com-eric-test-moovupTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/com.eric.test.moovup.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/com.eric.test.moovup";
+			};
+			name = Release;
+		};
+		07E5A3C52BFA0AA500748166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eric.com-eric-test-moovupUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = com.eric.test.moovup;
+			};
+			name = Debug;
+		};
+		07E5A3C62BFA0AA500748166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eric.com-eric-test-moovupUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = com.eric.test.moovup;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07E5A3952BFA0AA300748166 /* Build configuration list for PBXProject "com.eric.test.moovup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07E5A3BC2BFA0AA500748166 /* Debug */,
+				07E5A3BD2BFA0AA500748166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07E5A3BE2BFA0AA500748166 /* Build configuration list for PBXNativeTarget "com.eric.test.moovup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07E5A3BF2BFA0AA500748166 /* Debug */,
+				07E5A3C02BFA0AA500748166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07E5A3C12BFA0AA500748166 /* Build configuration list for PBXNativeTarget "com.eric.test.moovupTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07E5A3C22BFA0AA500748166 /* Debug */,
+				07E5A3C32BFA0AA500748166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07E5A3C42BFA0AA500748166 /* Build configuration list for PBXNativeTarget "com.eric.test.moovupUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07E5A3C52BFA0AA500748166 /* Debug */,
+				07E5A3C62BFA0AA500748166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		07E5A3C72BFA10A900748166 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.9.1;
+			};
+		};
+		07E5A3D72BFB206600748166 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		07E5A3C82BFA10A900748166 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07E5A3C72BFA10A900748166 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		07E5A3D82BFB206600748166 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07E5A3D72BFB206600748166 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 07E5A3922BFA0AA300748166 /* Project object */;
+}
