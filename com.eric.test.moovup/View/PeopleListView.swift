@@ -22,7 +22,7 @@ struct PeopleListView: View {
                     NavigationLink {
                         PersonDetailView(person: person)
                     } label: {
-                        PersonItemView(person: person)
+                        PersonItemView(person: person).accessibilityIdentifier(person.name.fullName())
                     }
                 }
             }

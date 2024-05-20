@@ -1,6 +1,6 @@
 import XCTest
 
-final class com_eric_test_moovupUITestsLaunchTests: XCTestCase {
+final class MoovupUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
