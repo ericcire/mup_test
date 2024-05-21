@@ -1,3 +1,16 @@
+## Question 1
+### Prerequisites
+
+- Swift 5.10
+- Xcode 15.4 (15F31d)
+
+### Run
+Go to folder `Q1`
+Open `moovup_test.playground` by Xcode
+
+From the bottom bar, press the triangle play button, to `Execute Playgrpund`
+
+
 ## Question 2
 
 ### Prerequisites
